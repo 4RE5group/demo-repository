@@ -13,7 +13,7 @@ jobs:
       - name: "Check out"
         uses: actions/checkout@v3
 
-      - name: "Set up ssh key"
+      - name: "Set up ssh key1"
       - run: |
           set -eu
           mkdir "$HOME/.ssh"
