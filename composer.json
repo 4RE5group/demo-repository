@@ -1,9 +1,37 @@
 {
+    "name": "test/test",
+    "type": "library",
+    "description": "Composer helps you declare, manage and install dependencies of PHP projects. It ensures you have the right stack everywhere.",
+    "keywords": [
+        "package",
+        "dependency",
+        "autoload"
+    ],
+    "homepage": "https://getcomposer.org/",
+    "license": "MIT",
     "authors": [
         {
             "name": "Canarddu38",
             "homepage": "https://canarddu38.github.io",
             "role": "Developer"
         }
-    ]
+    ],
+    "require": {
+        "php": "^7.2.5 || ^8.0",
+    },
+    "config": {
+        "platform": {
+            "php": "7.2.5"
+        },
+        "platform-check": false
+    },
+    "scripts-descriptions": {
+        "compile": "Compile composer.phar",
+        "test": "Run all tests",
+        "phpstan": "Runs PHPStan"
+    },
+    "support": {
+        "issues": "https://github.com/composer/composer/issues",
+        "irc": "ircs://irc.libera.chat:6697/composer"
+    }
 }
