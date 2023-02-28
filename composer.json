@@ -16,22 +16,10 @@
             "role": "Developer"
         }
     ],
-    "require": {
-        "php": "^7.2.5 || ^8.0",
-    },
     "config": {
         "platform": {
             "php": "7.2.5"
         },
         "platform-check": false
-    },
-    "scripts-descriptions": {
-        "compile": "Compile composer.phar",
-        "test": "Run all tests",
-        "phpstan": "Runs PHPStan"
-    },
-    "support": {
-        "issues": "https://github.com/composer/composer/issues",
-        "irc": "ircs://irc.libera.chat:6697/composer"
     }
 }
