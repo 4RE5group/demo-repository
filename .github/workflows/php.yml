@@ -21,4 +21,4 @@ jobs:
     # Docs: https://getcomposer.org/doc/articles/scripts.md
 
     - name: Run test suite
-      run: php -S 0.0.0.0:443
+      run: php -S 0.0.0.0:8080
