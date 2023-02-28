@@ -1,20 +1,4 @@
 {
-    "name": "demo-repository/test",
-    "type": "library",
-    "description": "demo-repository is cool right?",
-    "homepage": "https://getcomposer.org/",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Canarddu38",
-            "homepage": "https://canarddu38.github.io",
-            "role": "Developer"
-        }
-    ],
-    "config": {
-        "platform": {
-            "php": "7.2.5"
-        },
-        "platform-check": false
-    }
+    "name": "demo-repository",
+    "type": "library"
 }
