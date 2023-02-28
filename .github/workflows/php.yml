@@ -33,8 +33,8 @@ jobs:
         USER: ${{ secrets.user }}
         HOST: ${{ secrets.host }}
         DIST: ${{ secrets.dist }}
-      run: rsync -avzO --no-perms -e "ssh -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --delete * $USER@$HOST:$DIST
-
+      #run: rsync -avzO --no-perms -e "ssh -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --delete * $USER@$HOST:$DIST
+      run: echo done
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
     # Docs: https://getcomposer.org/doc/articles/scripts.md
 
