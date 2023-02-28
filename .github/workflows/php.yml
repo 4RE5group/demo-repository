@@ -20,5 +20,14 @@ jobs:
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
     # Docs: https://getcomposer.org/doc/articles/scripts.md
 
-    - name: Run test suite
-      run: php -S 0.0.0.0:8080
+    #- name: Run test suite
+    #  run: php -S 0.0.0.0:8080
+      
+    - name: run
+      run: |
+          set -eu
+          mkdir "$HOME/.ssh"
+          echo "${{ secrets.key }}" > "$HOME/.ssh/key"
+          chmod 600 "$HOME/.ssh/key"
+    - name: "Composer install"
+      run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
