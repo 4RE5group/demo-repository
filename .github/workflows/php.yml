@@ -1,9 +1,13 @@
-name: "Deploy a PHP project"
+name: PHP Composer
 
 on:
   push:
-    branches:
-      - master
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
 
 jobs:
   deploy:
