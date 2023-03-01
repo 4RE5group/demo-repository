@@ -20,16 +20,16 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: Set up ssh key1
+    #- name: Set up ssh key1
       run: |
           set -eu
           mkdir "$HOME/.ssh"
           echo "${{ secrets.key }}" > "$HOME/.ssh/key"
           chmod 600 "$HOME/.ssh/key"
-    - name: "Composer install"
-      run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
+    #- name: "Composer install"
+      #run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
       
-    - name: Sync
+    #- name: Sync
       #run: ssh -i $HOME/.ssh/key -o StrictHostKeyChecking=no
       #run: echo done
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
