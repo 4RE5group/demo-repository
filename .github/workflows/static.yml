@@ -1,4 +1,11 @@
-- name: PHP Runner
-  # You may pin to the exact commit or the version.
-  # uses: franzliedke/gh-action-php@4a618d15f6bfb8aedd606607e61b7df58eae9a8c
+- name: Configure GitHub Pages
   uses: franzliedke/gh-action-php@0.2.0
+  with:
+    # Optional static site generator to attempt to configure: "nuxt", "next", "gatsby", or "sveltekit"
+    static_site_generator: # optional
+    # Optional file path to static site generator configuration file
+    generator_config_file: # optional
+    # GitHub token
+    token: # default is ${{ github.token }}
+    # Should a Pages site be enabled for the repository if not so already? This will only work with user-to-server tokens.
+    enablement: # optional, default is false
